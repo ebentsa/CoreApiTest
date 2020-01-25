@@ -1,0 +1,21 @@
+{
+  "defaultAssembly": "Bank.Infrastructure",
+  "modules": [
+    {
+      "type": "WebApi.Bank.WebApiModule, WebApi.Bank",
+      "properties": {
+      }
+    },
+    {
+      "type": "Bank.Infrastructure.CoreModule",
+      "properties": {
+      }
+    },
+    {
+      "type": "Bank.Infrastructure.EntityFrameworkDataAccess.EntityFrameworkModule",
+      "properties": {
+        "ConnectionString": "Server=localhost;Database=TestBankDB;User Id=admin;Password=admin;"
+      }
+    }
+  ]
+}
